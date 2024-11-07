@@ -10,10 +10,16 @@ function App() {
 
   return (
     <div id='container'>
-      <header>x
+      <header>
+        <h1>Cade o Circular?</h1>
       </header>
       <MapView></MapView>     
       <DataView></DataView>
+      <footer>
+        <button>Previsões</button>
+        <button>Rotas</button>
+      
+      </footer>
     </div>
   )
 }
