@@ -1,11 +1,9 @@
-import { useEffect, useState } from 'react'
 import './DataView.css'
 import CadeCircular from '../../CircularApi/Circular.ts'
 
 
 export function DataView() {
 
-  const [count, setCount] = useState(0)
   const circular = new CadeCircular();
   circular.PontoAtual = 'LETRAS';
 
