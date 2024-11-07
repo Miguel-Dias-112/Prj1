@@ -18,6 +18,8 @@ export function DataView() {
                 <h1>Previsão de chegada</h1>
                 <h2>10horas</h2>
             </section>
+            <section>
+            </section>
         </div>
         
        

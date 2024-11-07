@@ -27,7 +27,7 @@ export function MapView() {
         
         view: new View({
           center: [-4827769.166891132,-2484616.878317465],
-          zoom: 15.7,
+          zoom: 16.4,
         }),
       });
       var markers = new VectorLayer({
