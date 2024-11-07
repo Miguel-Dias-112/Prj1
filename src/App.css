@@ -11,6 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  
 }
 
 #root {
@@ -19,31 +20,29 @@ body {
   margin: 0;
   height: 100vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  
   justify-content: flex-start;
   align-items: center;
 }
 #container{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 1fr;
   width: 100%;
   height: 100%;
 }
 header {
   width: 100%;
+  height: calc(100% - 3px);
   background-color: palevioletred;
   border-bottom: 3px solid black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 50px;
+  grid-row: 1;
+
+ 
   text-align: center;
 }
 header h1 {
@@ -52,6 +51,16 @@ header h1 {
   padding: 0;
   font-size: 2em;
   font-weight: bold;
+}
+main{
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-template-columns:  1fr;
+  
 }
 footer {
   width: 100%;

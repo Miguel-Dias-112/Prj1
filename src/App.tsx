@@ -11,8 +11,11 @@ function App() {
       <header>
         <h1>Cade o Circular?</h1>
       </header>
+      <main>
       <MapView></MapView>     
       <DataView></DataView>
+      </main>
+      
       <footer>
         <button>Previsões</button>
         <button>Rotas</button>
