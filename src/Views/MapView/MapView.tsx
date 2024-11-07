@@ -1,13 +1,13 @@
 import Map from "ol/Map";
 import { View } from "ol";
 import TileLayer from "ol/layer/Tile";
-import VectorLayer from "ol/layer/Vector";
-import { Vector as VectorSource } from "ol/source";
-import {Icon, Style} from 'ol/style';
-import { OSM, XYZ } from "ol/source";
-import Feature from 'ol/Feature';
-import Point from 'ol/geom/Point';
-import { fromLonLat } from 'ol/proj';
+// import VectorLayer from "ol/layer/Vector";
+// import { Vector as VectorSource } from "ol/source";
+// import {Icon, Style} from 'ol/style';
+import {  XYZ } from "ol/source";
+// import Feature from 'ol/Feature';
+// import Point from 'ol/geom/Point';
+// import { fromLonLat } from 'ol/proj';
 
 import { useEffect } from "react";
 import './MapView.css'
@@ -30,15 +30,15 @@ export function MapView() {
           zoom: 16.4,
         }),
       });
-      var markers = new VectorLayer({
-        source: new VectorSource(),
-        style: new Style({
-          image: new Icon({
-            anchor: [0.5, 1],
-            src: 'marker.png'
-          })
-        })
-      });
+      // var markers = new VectorLayer({
+      //   source: new VectorSource(),
+      //   style: new Style({
+      //     image: new Icon({
+      //       anchor: [0.5, 1],
+      //       src: 'marker.png'
+      //     })
+      //   })
+      // });
       // map.addLayer(markers);
       // var marker = new Feature(new Point(fromLonLat([106.8478695, -6.1568562])));
       // const source = markers.getSource();
